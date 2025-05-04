@@ -1,15 +1,3 @@
-import * as PIXI from "pixi.js";
-import "./style.css";
+import main from "./ex02.js";
 
-(async () => {
-  // Application
-  const app = new PIXI.Application();
-
-  await app.init({
-    background: "coral",
-  });
-
-  app.canvas.id = "app-canvas";
-
-  document.body.appendChild(app.canvas);
-})();
+main();
